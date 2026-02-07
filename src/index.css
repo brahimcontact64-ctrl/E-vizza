@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply antialiased;
+  }
+
+  [dir="rtl"] {
+    direction: rtl;
+  }
+
+  [dir="ltr"] {
+    direction: ltr;
+  }
+}
+
+@layer utilities {
+  .gradient-primary {
+    background: linear-gradient(135deg, #0F4C81 0%, #00C2A8 100%);
+  }
+
+  .gradient-accent {
+    background: linear-gradient(135deg, #00C2A8 0%, #FFD166 100%);
+  }
+}
